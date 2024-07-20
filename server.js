@@ -9,11 +9,11 @@ const app = express();
 const port = 4000;
 
 app.get('/', (req, res) => {
-  res.status(200).json({ status: 'ok', message: 'Microservice Login Running' });
+  res.status(200).json({ status: 'ok', message: 'Microservice Login Running jc' });
 });
 
 app.use(cors({
-  origin: 'http://lb-grupo14-app-cinema-2120355127.us-east-2.elb.amazonaws.com'
+  origin: 'http://lb-apigateway-1412267724.us-east-2.elb.amazonaws.com'
 }));
 
 app.use(bodyParser.json());
