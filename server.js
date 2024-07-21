@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(cors({
-  origin: 'http://lb-grupo14-app-cinema-2120355127.us-east-2.elb.amazonaws.com'
+  origin: 'http://lb-apigateway-1412267724.us-east-2.elb.amazonaws.com'
 }));
 
 app.use(bodyParser.json());
